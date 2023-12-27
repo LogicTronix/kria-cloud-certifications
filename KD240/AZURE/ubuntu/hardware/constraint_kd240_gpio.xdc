@@ -1,0 +1,11 @@
+set_property PACKAGE_PIN E12 [get_ports {GPIO_tri_io[0]}]
+set_property PACKAGE_PIN D10 [get_ports {GPIO_tri_io[1]}]
+set_property PACKAGE_PIN D9 [get_ports {GPIO_tri_io[2]}]
+set_property PACKAGE_PIN D13 [get_ports {GPIO_tri_io[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_tri_io[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_tri_io[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_tri_io[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {GPIO_tri_io[0]}]
+
+set_property PULLUP true [get_ports som240_1_connector_pmod_iic_scl_io]
+set_property PULLUP true [get_ports som240_1_connector_pmod_iic_sda_io]
