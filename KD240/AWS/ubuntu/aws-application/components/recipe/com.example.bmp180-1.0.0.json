@@ -1,0 +1,45 @@
+{
+    "RecipeFormatVersion": "2020-01-25",
+    "ComponentName": "com.example.bmp180",
+    "ComponentVersion": "1.0.0",
+    "ComponentDescription": "Comms to IoT core",
+    "ComponentPublisher": "Me",
+    "ComponentConfiguration": {
+      "DefaultConfiguration": {
+        "message": "hello",
+        "accessControl": {
+          "aws.greengrass.ipc.mqttproxy": {
+            "com.example.mqtt:mqttproxy:1": {
+              "policyDescription": "Allows access to pub to kd240/bmp180.",
+              "operations": [
+                "aws.greengrass#PublishToIoTCore",
+                "aws.greengrass#SubscribeToIoTCore"
+              ],
+              "resources": [
+                "kd240/mqtt",
+                "kd240/button",
+		"kd240/bmp180"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Manifests": [
+      {
+        "Platform": {
+          "os": "linux"
+        },
+        "Lifecycle": {
+          "Install": {
+            "RequiresPrivilege": true,
+            "script": "python3 -m pip install --user awsiotsdk"
+          },
+          "Run": {
+            "RequiresPrivilege": true,
+            "script": "python3 -u {artifacts:path}/mqtt.py '{configuration:/message}'"
+          }
+        }
+      }
+    ]
+  }
