@@ -15,7 +15,7 @@ For setting up hardware and software for KD240 connect to AWS IoT , refer the do
 
 ## KD240 to AWS IoT Greengrass Architecture
 
-![KD240 to AWS IoT Greengrass Architecture](https://github.com/LogicTronix/kria-cloud-certifications-private/blob/main/KD240/AWS/ubuntu/documents/KD240-aws-iot.png)
+![KD240 to AWS IoT Greengrass Architecture](https://github.com/LogicTronix/kria-cloud-certifications-private/blob/main/KD240/AWS/ubuntu/documents/KD240_AWS_IoT_updated.png)
 This diagram shows the software and hardware architecture used in this tutorial. 
 Kria KD240 board consists of Programmable Logic (PL) Fabric (FPGA)  hardware overlay for interfacing LED, switch and I2C sensor. 
 Further it runs AWS Greengrass Core Device Application which publish and subscribe message topics for actuating LED and monitoring sensors and switches. 
