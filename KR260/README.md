@@ -15,7 +15,7 @@ For setting up hardware and software for KR260 connect to AWS IoT , refer the do
 
 ## KR260 to AWS IoT Greengrass Architecture
 
-![KR260 to AWS IoT Greengrass Architecture](https://github.com/LogicTronix/kria-cloud-certifications-private/blob/main/KR260/AWS/ubuntu/documents/KR260_AWS_IoT.png)
+![KR260 to AWS IoT Greengrass Architecture](https://github.com/LogicTronix/kria-cloud-certifications-private/blob/main/KR260/AWS/ubuntu/documents/KR260_AWS_IoT_updated.png)
 This diagram shows the software and hardware architecture used in this tutorial. 
 Kria KR260 board consists of Programmable Logic (PL) Fabric (FPGA)  hardware overlay for interfacing LED, switch and I2C sensor. 
 Further it runs AWS Greengrass Core Device Application which publish and subscribe message topics for actuating LED and monitoring sensors and switches. 
